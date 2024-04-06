@@ -1,0 +1,956 @@
+/*--------- All Pages ----------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555;
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    border-radius: 2%;
+}
+
+.exec_pics{
+
+    border-radius: 5%;
+
+}
+
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+    height: 50%;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-4:hover{
+    transform: translate(-5px);
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+.exe{
+   align-items: baseline;
+   
+}
+
+.exeimg{
+   width: 5cm;
+   height: 5cm;
+   background-color: rgba(0, 0, 0, 0);
+   border-radius: 50%;
+}
+
+.backimage{
+   background: linear-gradient(to bottom, #6DB5F7 50%, #fff 50%);
+}
+
+.backimage1{
+    background: linear-gradient(to bottom, #444647 50%, #fff 50%);
+}
+
+/*------buttons design-------*/
+.btn{
+    display: inline-block;
+    background: green;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border: double;
+    border-radius: 30px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #0d5c1b;
+}
+
+#refreshbtn a{
+    color: #FFFFFF;
+}
+
+/*-------Header design-------*/
+.header{
+    background: radial-gradient(white);
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: green;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*--------- Navbar ---------*/
+.navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    width: 100%;
+    background-image: url("../images/nav_pic.gif");
+    height: 3cm; /* 3 cm in height */
+    z-index: 9999; /* Ensures the navbar is on top */
+}
+
+.navbar li a{
+    font-size: medium;
+    font-weight: bold;
+    float: right;
+    padding: 0.4cm;
+    color: white; 
+}
+
+.navbar li a:hover {
+    border-bottom: 0.5px solid white;
+}
+
+.navbar .active {
+    border-bottom: 0.5px solid white;
+}
+
+nav{
+    flex: wrap;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    line-height: 100%;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.logo1 {
+    width: 2.6cm;
+    height: 2.6cm;
+    margin-right: 10px; 
+}
+
+/*---------featured categories-------*/
+.categories .col-3 img{
+    width: 290px;
+    height: 170px;
+    border-radius: 11%;
+}
+
+/*----------brands-----------*/
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+/*---------Footerpage------------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex-basis: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/*----------Contact Page--------*/
+.contactpagecontainer{
+    text-align: center;
+}
+
+.contactpage{
+    flex: wrap;
+    display: inline-block;
+    background-color: #cecdcd;
+    border: solid rgb(240, 240, 240);
+    height: fit-content;
+    width: 98.95vw;
+}
+
+.contactpage:hover{
+    border: solid rgb(182, 182, 182);
+}
+
+#submitcontactformbtn{
+    color: #fff;
+    padding: 5px;
+    width: fit-content;
+    border: solid #979797;
+    border-radius: 10%;
+}
+
+.googlemapscontainer{
+    flex: wrap;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: solid rgb(240, 240, 240);
+    height: fit-content;
+    width: 98.95vw;
+}
+
+.googlemaps{
+    width: 98vw;
+}
+
+/*----------login-page------------*/
+.loginpage{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+.formcontainer{
+    background: #fff;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.formcontainer form{
+    padding: 0 20px;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input{
+    align-content: center;
+    width: 50%;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+}
+
+form .btn{
+    width: fit-content;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+#loginform{
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid green;
+}
+
+form a{
+    font-size: 12px;
+}
+
+#loginform #registerurl,#forgotpasswordurl{
+    color: green;
+}
+
+#executivesigninbtn{
+    background-color: grey;
+}
+
+#executivesigninbtn:hover{
+    background-color: rgb(99, 97, 97);
+}
+
+/*------Registration-page------*/
+#registrationform{
+    width: fit-content;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid green;
+}
+
+#registrationform #loginurl{
+    color: green;
+}
+
+#registrationbtn{
+    width: 100%;
+}
+
+/*----------Account-page--------*/
+#accountform{
+    width: 50%;
+    margin: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+#accountform input{
+    margin: 5px auto;
+}
+
+#accountform #changepasswordbtn{
+    color: #fff;
+    background-color: green;
+}
+
+.accountinfo #updatesbtn,#logoutbtn{
+    color:green;
+    text-decoration: none;
+}
+
+#sub-container{
+    padding: 0px;
+    margin-right: 140px;
+}
+
+#account-page{
+    padding: 0px;
+    margin-right: -140px;
+}
+
+.updatestable{
+    border: solid;  
+}
+
+.updatestable th{
+    background-color: #afd7fd;
+}
+
+.updatestable td{
+    background-color: #afd7fd;
+}
+
+/*----------Edit Profile Page--------*/
+.editprofileuploadbtn{
+    color: white;
+    padding: 10px;
+    width: fit-content; 
+    background-color: blue;
+    border: solid rgb(226, 218, 218);
+    border-radius: 10%;
+}
+
+.editprofileuploadbtn:hover{
+    background-color: rgb(97, 97, 201);
+}
+
+.editprofileverifybtn{
+    color: white;
+    padding: 10px;
+    width: fit-content; 
+    background-color: rgb(250, 200, 34);
+    border: solid rgb(226, 218, 218); 
+    border-radius: 10%;
+}
+
+.editprofileverifybtn:hover{ 
+    background-color: rgb(160, 160, 65);
+}
+
+.editprofilebtn{
+    color: white;
+    padding: 10px;
+    width: 20%; 
+    background-color:green;
+    border: solid rgb(226, 218, 218); 
+    border-radius: 10%;
+}
+
+.editprofilebtn:hover{
+    background-color: #b1c24f;
+}
+
+
+/*---------- media query for less than 1100 screen size --------*/
+@media only screen and (max-width: 1100px){
+
+}
+
+/*---------- media query for less than 1000 screen size --------*/
+@media only screen and (max-width: 1000px){
+
+}
+
+/*---------- media query for less than 900 screen size --------*/
+@media only screen and (max-width: 900px){
+    .navbar li a{
+        font-size: x-small; 
+    }
+}
+
+/*---------- media query for less than 800 screen size --------*/
+@media only screen and (max-width: 800px){
+/*---------- Header --------*/
+#nav-exit{
+    background-image: url("../images/nav_pic.gif");
+}
+
+.navbar li a{
+    font-size: xx-small;
+    padding: 0.2cm;
+    border-radius: 5%;   
+}
+
+nav ul{
+    position: absolute;
+    top: 70px;
+    right: 0; 
+    background-image: url("../images/nav_pic.gif");
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+nav ul li{
+    font-size: xx-small;
+    right: 0;
+}
+
+nav ul li a{
+    color: #fff;
+}
+
+.menu-icon{
+    display: block;
+    cursor: pointer;
+}
+}
+
+/*-------media query for less than 600 screen size----*/
+@media only screen and (max-width: 600px){
+.row{
+    text-align: center;
+}
+.col-2, .col-3, .col-4{
+    flex-basis: 100%;
+}
+}
+
+/*-------media query for less than 500 screen size----*/
+@media only screen and (max-width: 500px){
+
+}
+
+/*-------media query for less than 450 screen size----*/
+@media only screen and (max-width: 450px){
+
+}
+
+/*-------media query for less than 400 screen size----*/
+@media only screen and (max-width: 400px){
+
+}
+
+/*-------media query for less than 350 screen size----*/
+@media only screen and (max-width: 350px){
+/*---------featured categories-------*/
+.categories .col-3 img{
+    width: 250px;
+}
+}
+
+/*-------media query for less than 300 screen size----*/
+@media only screen and (max-width: 300px){	
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+    height: 50%;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-4:hover{
+    transform: translate(-5px);
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+/*------buttons design-------*/
+.btn{
+    padding: 8px 30px;
+    margin: 30px 0;
+}
+
+/*-------Header design-------*/
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    left: 0%;
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    width: 50%;
+    height: 100%;
+    line-height: 100%;
+}
+
+.title{
+    margin: 0 auto 80px;
+    line-height: 60px;
+}
+
+.title::after{
+    width: 80px;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*---------- About Page ------------*/
+
+/*--------- offer ---------*/
+.offer{
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+/*----------brands-----------*/
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+}
+
+/*---------Footerpage------------*/
+.footer{
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer h3{
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    height: 1px;
+    margin: 20px 0;
+}
+}
+
+/*-------media query for less than 280 screen size----*/
+@media only screen and (max-width: 280px){
+/*-------Header design-------*/
+.header .row{
+    margin-top: 70px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    background: #FFFFFF;
+    width: 50%;
+    height: 100%;
+    line-height: 100%;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    left: 0%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: green;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*---------- About Page ------------*/
+
+}
+
+/*-------media query for less than 260 screen size----*/
+@media only screen and (max-width: 260px){
+/*-------Header design-------*/
+.header .row{
+margin-top: 70px;
+}
+
+.navbar{
+display: flex;
+align-items: center;
+padding: 20px;
+}
+
+nav{
+flex: 1;
+text-align: right;
+background: #FFFFFF;
+width: 50%;
+height: 100%;
+line-height: 100%;
+}
+nav ul{
+display: inline-block;
+list-style-type: none;
+}
+
+nav ul li{
+display: inline-block;
+margin-right: 20px;
+}
+
+.menu-icon{
+width: 28px;
+margin-left: 20px;
+left: 0%;
+}
+
+.title{
+text-align: center;
+margin: 0 auto 80px;
+position: relative;
+line-height: 60px;
+color: #555;
+}
+
+.title::after{
+content: '';
+background: green;
+width: 80px;
+height: 5px;
+border-radius: 5px;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%);
+}
+
+/*---------- About Page ------------*/
+
+}
+
+/*-------media query for less than 240 screen size----*/
+@media only screen and (max-width: 240px){
+/*-------Header design-------*/
+.header .row{
+margin-top: 70px;
+}
+
+.navbar{
+display: flex;
+align-items: center;
+padding: 20px;
+}
+
+nav{
+flex: 1;
+text-align: right;
+background: #FFFFFF;
+width: 50%;
+height: 100%;
+line-height: 100%;
+}
+nav ul{
+display: inline-block;
+list-style-type: none;
+}
+
+nav ul li{
+display: inline-block;
+margin-right: 20px;
+}
+
+.menu-icon{
+width: 28px;
+margin-left: 20px;
+left: 0%;
+}
+
+.title{
+text-align: center;
+margin: 0 auto 80px;
+position: relative;
+line-height: 60px;
+color: #555;
+}
+
+.title::after{
+content: '';
+background: green;
+width: 80px;
+height: 5px;
+border-radius: 5px;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%);
+}
+}
